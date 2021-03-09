@@ -51,7 +51,7 @@ final class NotificationClient implements NotificationClientInterface
         $this->transportFactory = $transportFactory;
         $this->httpClient = $httpClient ?? HttpClient::create();
 
-        $this->configurators = CollectorHelper::orderLowerPriorityFirstAsArray(
+        $this->configurators = CollectorHelper::orderLowerPriorityFirst(
             CollectorHelper::filterByClass($configurators, QueueMessageConfiguratorInterface::class)
         );
     }
