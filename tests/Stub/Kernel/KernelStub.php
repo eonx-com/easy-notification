@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace EonX\EasyNotification\Tests\Stub\HttpKernel;
+namespace EonX\EasyNotification\Tests\Stub\Kernel;
 
 use EonX\EasyNotification\Bundle\EasyNotificationBundle;
 use Symfony\Component\Config\Loader\LoaderInterface;
